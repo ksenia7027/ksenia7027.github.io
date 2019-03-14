@@ -7,6 +7,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -77,7 +80,7 @@
 					 		<button type="button" class="btn btn-outline-light download_button">Завантажити</button>
 					 	</div>
 												
-						<div class="col-lg-4">
+						<div class="col-lg-4 col-sm-hide col-md-display">
 							<form class="form_registry my-5" action="#" target="blank">
 								<p class="form_title">Спробуйте <span>безкоштовно</span></p>
 								<p><input class="u_info" id="user_name" type="text" name="" placeholder="Ім'я"></p>
@@ -100,11 +103,20 @@
 			</div>
 		</div>
 
-		<div class="row">
+
+
+
+
+
+
+
+
+	         <div class="row">
         	<div class="col-lg-12 py-4 d-flex justify-content-between social">
 	        	<div class="left_box px-3">
-					<p class="soc_title">Cоціальні мережі</p>
+				<p class="soc_title">Cоціальні мережі</p>
 					<p class="soc_text">Ми в соціальних мережах,  підпишіться і отримайте знижку!</p>
+					
 				</div>	
 	          	
 	          		<div class="col-lg-7 d-inline-flex justify-content-between">
@@ -130,30 +142,51 @@
 
 
 
+
         	
         </div>
-        <div class='content'>
-        <div class="row">
-        <div class="col-lg-3" >
-        	
+        <div class="tabs">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-2">
+					<ul class="nav nav-pills nav-stacked flex-column">
+						<li class="active"><a href="#tab_a" data-toggle="pill">Карантин</a></li>
+						<li><a href="#tab_b" data-toggle="pill">Глюки</a></li>
+						<li><a href="#tab_c" data-toggle="pill">Вівці</a></li>
+					</ul>
+				</div>
+				<div class="col-xl-6">
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab_a">
+							<h3>Прості рішення знайти важче.</h3>
+							<div><p>Йшов п'ятий день карантину...Батьки щиро зізнавалися у любові вчителям. В квартирах закінчувався стратегічний запас продуктів. Усі розетки були зайняті зарядками від гаджетів. Мами згадали всі ігри свого дитинства. </p>
+							<p>І навіть кіт, одягнутий у плаття, виглядав з коляски і мріяв про початок занять у школі...</p></div>
+							<div class="pic1">
+							<img src="images/tab1.gif" width="300px">
+							</div>
+						</div>
+						<div class="tab-pane" id="tab_b">
+							<h3>Глюк – що це, хто це?</h3>
+							<p>Глюк — це прізвище великого австрійського композитора чеського походження. Крістоф Глюк жив у XVIII столітті. Він був придворним капельмейстером, створював музику для опери. Прославився тим, що став реформатором цього жанру. Автор 107 опер.</p>
 
-        	<div class="bl">Карантин</div>
-        	<div class="bl">Глюки</div>
-        	<div class="bl">Вівці</div>
+<p>Гаврило Глюк – один із найбільш недооцінених художників Закарпаття. «Лісоруби» Гаврила Глюка – одна з найвідоміших картин, намальованих закарпатським митцем. Саме за цю роботу художника в 1958-му році нагородили Великою срібною медаллю на Всесвітній виставці в Брюсселі.</p>
+<img src="images/tab2.gif"width='300px'>
+						</div>
+						<div class="tab-pane" id="tab_c">
+							<h3>Цікаві факти про баранчиків.</h3>
 
-        </div>
+							<div><p>Вівці були одомашнені людьми більше 8000 років тому. Популяція овець Австралії перевищує кількість населення країни в 4 рази. Найбільше поголів’я овець в світі знаходиться в Китаї. Найперший клонований ссавець – це овечка Доллі. Всього в світі налічується близько шестисот різних порід овець.</p>
 
-
-        <div class="col-lg-5" >
-        <p class='title1'>Прості рішення знайти важче</p>
-        <p class="text">
- Йшов п'ятий день карантину...Батьки щиро зізнавалися у любові вчителям. В квартирах закінчувався стратегічний запас продуктів. Усі розетки були зайняті зарадками від гаджетів. Мами згадали усі ігри свого дитинства.
- І навіть кіт, одягнутий у плаття, виглядав з коляски і мріяв про початок занять у школі...</p>
-<p><button onclick="SendMessage()" class="button1">Завантажити</button></p>
-							
-</div>
-<div class='col-lg-4 '><img src="images/tab1.gif" width="350px"></div>
-<div class="col-lg-1" ></div>
+<p>Вівці здатні дивитися назад, не повертаючи голови. Як не дивно, але експерименти підтвердили, що вівці володіють відмінною пам’яттю. Вівці мають прямокутні зіниці. Також вівці розрізняють кольори.
+							</p></div>
+							<div class=" tab3"><img src="images/tab3.gif" width="300px"></div>
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		
+	
 
 
 
@@ -225,29 +258,47 @@
 		<p class="a8">Будемо раді бачити новий спам!</p>
 		<p class="title2">Давайте спершу перекусимо, а дружелюбність проявите потім</p>
 	</div>
-<div class="row "> 
+</div>
+
+
+	<div class='row'>
+			 
+			  	<div class="col-lg-6">
+			  	
+
+			      <input type="text" class="form-control" placeholder="Як звати">
+			      <input type="email" class="form-control" placeholder="Куди електронні листи писати">
+			      <input type="text" class="form-control" placeholder="Що в темі говорити">
+			    </div>
+			    <div class="col-lg-6">
+			  
+			      <textarea  class="form-control" rows="8" id="comment" placeholder="І що ви про це все думаєте?"></textarea>
+			    </div>
+			</div>
+
+<div class='row'>
+	<div class="col-lg-4">
+	</div>
+
+	<div class="col-lg-4">
 	
-	<div class="col-lg-12 ">	
-</div><form><input type="text" width="700px" name="login" value="Як звати?" />
-</p>
- <p><input type="text" name="login"  value="Куди електронні листи писати?" />
-</p>
- <p><input type="text" name="login"  value="Що в темі говорити?" />
-</p>
+
+				   <button onclick="SendMessage()" class="button22">Відправити</button>
+	</div>
+	<div class="col-lg-4">
+	</div>				
+			  
+		
 
 
-<textarea name="message" cols="40"  rows="6"  >І що ви про це думаєте??
-</textarea>
-<p><button onclick="SendMessage()" class="button22">Відправити</button></p>
-</form>
-
+</div>
 
 
 
 
 
 	</div>
-</div>
+
 
 
 
@@ -258,12 +309,12 @@
 
 <div class="row">
         	<div class="col-lg-12 py-4 d-flex justify-content-between social">
-	        	<div class="left_box px-3">
+	        	<div class="left_box px-3 soc_text">
 					2019
 					
 				</div>	
 	          	
-	          		<div class="col-lg-7 d-inline-flex justify-content-between">
+	          		<div class="col-lg-8 d-inline-flex justify-content-between">
 <div class="F"><a href="https://www.facebook.com/"></a></div>
 <div class="T"><a href="https://twitter.com/?lang=uk"></a></div>
 <div class="G"><a href="https://www.google.com.ua/?hl=ua"></a></div>
@@ -290,8 +341,9 @@
 
 
 
-
+</div>
 	</div>
+</div>
 
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -309,10 +361,29 @@
 		
 
 	
-	}
 	
+};
+
+
+let activTab = document.querySelectorAll(".tabs li");
+for (let i = 0; i < activTab.length; i++){
+activTab[i].addEventListener('click', changeTab)
+};
+function changeTab() {
+let noActiveTab = document.querySelectorAll(".tabs li");
+for (let i = 0; i < noActiveTab.length; i++){
+noActiveTab[i].classList.remove("active");
+};
+console.dir(this);
+this.classList.add("active");
+}
+
 </script>
 
-	</script>
+
+
+	
+
+
 </body>
 </html>
